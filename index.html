@@ -6,7 +6,8 @@
     <meta name="description" content="This is the home page of GameHub - The universe of Gam.">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
     <link href="css/styles.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,48 +25,62 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
   </head>
+  
 <body>
     <header>
-        <a class="logo" href="index.html"><img src="images/GameHub_Logo.png" alt="logo"/></a>
-        <nav id="main-nav" aria-label="Main">          
-            <ul class="nav-link">
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="createaccount.html">Register</a></li>
-                <li><a href="account.html">Log In</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <nav id="sub-nav" aria-label="SubNav">
-        <ul>
-            <li><a href="game.html">Action</a></li>
-            <li><a href="game.html">Adventure</a> </li>
-            <li><a href="game.html">Fantasy</a> </li>
-            <li><a href="game.html">RPG</a> </li>
-            <li><a href="game.html">Strategy</a> </li>
-            <li class="search-bar">
-                <input type="search" placeholder="Search here">
-                <label class="icon">
-                <a href="search.html"><span class="fas fa-search"></span></a>
-            </li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="container">
-            <img src="images/GameHub_covers8.jpg"  alt="Game: Boxer">
-            <img src="images/GameHub_covers6.jpg"  alt="Game: Space War">
+        <section id="navbar">
+            <a href="index.html"><img src="/images/GameHub_Logo.png" class="GameHub_Logo" alt="GameHub Logo"></a>
+            <div>
+                <ul id="navlinks">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="createaccount.html">Register</a></li>
+                    <li><a href="account.html">Log in</a></li>
+                    <li><a href="checkout.html"><i class="fas fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
         </section>
-      
-        <h1>Best Sellers</h1>
-        <section class="games">
-            <a href="game.html"> <img src="images/GameHub_covers4.jpg" alt="Game: Furious"> </a>
-            <a href="game.html"> <img src="images/GameHub_covers10.jpg" alt="Game: Forge Legend"> </a>
-            <a href="game.html"> <img src="images/GameHub_covers6.jpg" alt="Game: Boxer"> </a> 
-            <a href="game.html"> <img src="images/GameHub_covers8.jpg" alt="Game: Space War"> </a>
-        </section>
-    </main>
-          
+            <section id="subnavbar">
+                <div>
+                    <ul id="category">
+                        <li><a href="game.html">Action</a></li>
+                        <li><a href="game.html">Adventure</a></li>
+                        <li><a href="game.html">Fantasy</a></li>
+                        <li><a href="game.html">MMORPG</a></li>
+                        <li><a href="game.html">Strategy</a></li>
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+    <div id="featured-container">
+        <h3>Featured Games</h4>
+            <div class="games">
+                <img src="/images/GameHub_covers6.jpg" alt="Playbow - Space War">
+                <img src="/images/GameHub_covers10.jpg" alt="Playbox - Forge Legends">
+            </div>
+    </div>
+
+    <section id="games">
+        <h3>Popular</h3>
+        <div class="games-container">
+        </div>
+    </section>
+
+    <script src="js/games.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <p>GameHub is an online shop where users can purchase computer games. <br>
+             Games could either be used games, they could be brand new games or a user could pre-order games.</p>
+             <ul class="socials">
+                 <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                 <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                 <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+             </ul>
+        </div>
+        <p>copyright &copy;2021 <a href="#">GameHub</a></p>
+    </footer>
     
 </body>
 </html>
