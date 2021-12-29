@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Maven+Pro&family=Metrophobic&family=Quicksand:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -8,13 +8,20 @@
     text-decoration: none;
 }
 
-body {
-    width: 100%;
+a:visited {
+    text-decoration: none;
+    color: black;
 }
 
-header {
+body {
+    width: 100%;
+    background-color: #1b203d;
+}
+
+header, .gamesContainer, #content {
     max-width: 80%;
     margin: auto;
+    font-family: "Metrophobic", sans-serif;
 }
 
 .GameHub_Logo {
@@ -29,6 +36,12 @@ header {
     padding: 20px 80px;
     background-color: #1b203d;
     border-radius: 0 0 1em 1em;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06), 
+                0 2px 4px rgba(0,0,0,0.06), 
+                0 4px 8px rgba(0,0,0,0.06), 
+                0 8px 16px rgba(0,0,0,0.06),
+                0 16px 32px rgba(0,0,0,0.06), 
+                0 32px 64px rgba(0,0,0,0.06);
 }
 
 #navlinks {
@@ -74,15 +87,17 @@ header {
 
 #category li a {
     font-size: 23px;
-    color: #1b203d;
+    color: #f2f2f2;
     transition: 0.3s ease;
 }
 
-#content {
+#content, .gamesContainer {
     background-color: rgb(208, 212, 223);
-    width: 80%;
-    margin: auto;
     border-radius: 1em 1em 0 0;
+}
+#content {
+    position: relative;
+    min-height: 100vh;
 }
 
 #featured-container {
@@ -109,12 +124,12 @@ img {
 .games-container {
     display: flex;
     margin: auto;
-    width: 100%;
+    width: 90%;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .results {
-    display: inline-block;
-    width: 80%;
     text-align: center;
 }
 
@@ -129,11 +144,48 @@ img {
     font-size: 18px;
 }
 
+.gamesContainer {
+    position: relative;
+    margin-top: 20px;
+    padding: 50px 100px 50px 100px;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "name name"
+    "img det"
+    "des des"
+    "foot foot";
+    grid-template-rows: 8% 25% 20%;
+    grid-template-columns: 60% 40%;
+}
+
+.gamesContainer > .gameTitle {
+    grid-area: name;
+}
+
+.gamesContainer > .details-card {
+    grid-area: img;
+}
+
+.gamesContainer > .gamesDetails{
+    grid-area: det;
+}
+
+.gamesContainer > .gameDescription {
+    grid-area: des;
+}
+
+.gamesContainer img {
+    width: 400px;
+    height: auto;
+}
+
+
 footer {
-    position: absolute;
+    position: relative; bottom:0;
     background-color: #1b203d;
     height: auto;
-    padding-top: 40px;
+    padding: 30px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -142,7 +194,7 @@ footer {
 }
 
 .footer-content {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     color: #f2f2f2;
@@ -153,10 +205,15 @@ footer {
 .socials {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    
 }
 
-.gamesContainer {
-    width: 80%;
-    margin: auto;
+.footer-content li a {
+    font-size: 40px;
+    color: coral;
+}
+
+.footer-content p {
+    text-align: center;
 }
