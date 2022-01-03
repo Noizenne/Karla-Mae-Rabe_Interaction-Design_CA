@@ -34,14 +34,6 @@ h1 {
     margin: 10px;
 }
 
-h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
 h1, h2, h3, p {
     color: #f2f2f2;
 }
@@ -293,6 +285,16 @@ button {
 
 }
 
+/*Checkout*/
+
+.cardIcons {
+    font-size: 40px;
+}
+
+.checkoutForm .row{
+    display: flex;
+}
+
 .formError {
     display: none;
     color: crimson;
@@ -300,12 +302,23 @@ button {
     margin-top: 2px;
 }
 
+/*Checkout Success*/
+
+.successContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.successContainer p {
+    margin-bottom: 10px;
+}
 /*Register*/
 
 form, #registerForm {
     width: 600px;
     margin: auto;
 }
+
 /*Footer*/
 
 footer {

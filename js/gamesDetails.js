@@ -18,6 +18,7 @@ async function getGame() {
         const data = await response.json();
 
         createHTML(data);
+        console.log(data);
 
     }
     catch {
@@ -33,7 +34,7 @@ function createHTML(data) {
     <div class="details-card">
     <img src="${data.background_image}"</img>
     </div>
-    <div class=gamesDetails>Genre: <p>${data.genres.name} Released: ${data.released} Platforms: ${data.platforms.name}</p></div>
+    <div class=gamesDetails>Details<p>${data.genres[1].name} Released: ${data.released} Platforms: ${data.platforms[1].platform.name}</p></div>
     <div class="gameDescription"><p><h3>Description</h3> ${data.description}</p></div>
     `
 }

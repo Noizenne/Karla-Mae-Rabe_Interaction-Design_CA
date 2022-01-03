@@ -29,13 +29,59 @@
             <ul id="navlinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="createaccount.html">Register</a></li>
-                <li><a class="active" href="account.html">Log in</a></li>
-                <li><a href="checkout.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="account.html">Log in</a></li>
+                <li><a class="active" href="checkout.html"><i class="fas fa-shopping-bag"></i></a></li>
             </ul>
         </div>
+    </section>
+    <section id="subnavbar">
+      <div>
+          <ul id="category">
+              <li><a href="game.html">Action</a></li>
+              <li><a href="game.html">Adventure</a></li>
+              <li><a href="game.html">Fantasy</a></li>
+              <li><a href="game.html">MMORPG</a></li>
+              <li><a href="game.html">Strategy</a></li>
+          </ul>
+      </div>
+    </section>
+  </header>
+
+  <section id="content">
+    <div class="checkout-container">
+      <form class="checkoutForm">
+          <h1>Payment</h1>
+          <label for="fname">Accepted Cards</label>
+          <div class="cardIcons">
+            <i class="fab fa-cc-mastercard" style="color:orange;"></i>
+            <i class="fab fa-cc-visa" style="color:blue;"></i>
+            <i class="fab fa-cc-paypal" style="color:red;"></i>
+          </div>
+
+          <label for="name">Name on Card</label>
+          <input type="text" name="cardname" id="name" placeholder="John Doe">
+          <label for="ccnum">Credit Card Number</label>
+          <input type="text" name="cardnumber" id="ccnum" placeholder="1111-2222-3333-4444">
+          <label for="expmonth">Exp Month</label>
+          <input type="text" name="expmonth" id="expmonth" placeholder="January">
+
+          <div class="row">
+            <div class="year">
+              <label for="expyear">Exp Year</label>
+              <input type="text" name="expyear" id="expyear" placeholder="2021">
+            </div>
+            <div class="cvv">
+              <label for="cvv">CVV</label>
+              <input type="text" name="cvv" id="cvv" placeholder="123">
+            </div>
+          </div>
+
+          <button formaction="checkoutsuccess.html" type="submit">Submit Payment</button>
+          
+    </div>
+
   </section>
-    </header>
     
 </body>
 </html>
