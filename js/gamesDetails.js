@@ -29,7 +29,7 @@ getGame();
 
 function createHTML(data) {
     gamesContainer.innerHTML = `
-    <h1 class="gameTitle">${data.name}</h1>
+    <h2 class="gameTitle">${data.name}</h2>
     <div class="details-card">
     <img src="${data.background_image}"</img>
     </div>

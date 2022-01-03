@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My Account</title>
-        <meta name="description" content="This is your account page.">
+        <title>Game</title>
+        <meta name="description" content="This is your selected game.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link href="css/styles.css" rel="stylesheet">
-
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Maven+Pro&family=Metrophobic&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     
         <!-- Hotjar Tracking Code for https://tender-poitras-14482d.netlify.app/ -->
     <script>
@@ -28,13 +24,14 @@
 <body>
   <header>
     <section id="navbar">
+
         <a href="index.html"><img src="/images/GameHub_Logo.png" class="GameHub_Logo" alt="GameHub Logo"></a>
         <div>
             <ul id="navlinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="register.html">Register</a></li>
-                <li><a class="active" href="account.html">Log in</a></li>
+                <li><a href="account.html">Log in</a></li>
                 <li><a href="checkout.html"><i class="fas fa-shopping-bag"></i></a></li>
             </ul>
         </div>
@@ -49,24 +46,29 @@
               <li><a href="game.html">Strategy</a></li>
           </ul>
       </div>
-    </section>
-    </header>
-    <section id="content">
-      
-    </section>
-<footer>
-  <div class="footer-content">
-    <ul class="socials">
+  </section>
+  </header>
+
+  <div class="random"></div>
+
+  <div class="gamesContainer">
+
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <ul class="socials">
         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
         <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
         <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
     </ul>
-    <p>GameHub is an online shop where users can purchase computer games. <br>
-    Games could either be used games, they could be brand new games or a user could pre-order games.</p>
-    <p>copyright &copy;2021 <a href="#">GameHub</a></p>
-  </div>
+        <p>GameHub is an online shop where users can purchase computer games. <br>
+         Games could either be used games, they could be brand new games or a user could pre-order games.</p>
+         <p>copyright &copy;2021 <a href="#">GameHub</a></p>
+        </div>
 </footer>
-<script src="js/games.js"></script>
     
+  <script src="js/gamesDetails.js"></script>
+  
 </body>
 </html>
