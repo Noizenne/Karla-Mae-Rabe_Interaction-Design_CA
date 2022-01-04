@@ -3,8 +3,6 @@ const url = "https://api.rawg.io/api/games?key=930f3820ae934782bc02fc7a5949d8a8"
 
 const gamesContainer = document.querySelector(".games-container");
 
-const random = document.querySelector(".random");
-
 async function gamesList() {
 
     try {
@@ -15,6 +13,9 @@ async function gamesList() {
         const games = results.results;
 
         console.log(games);
+
+        const loading = document.querySelector(".loader");
+        loading.classList.remove("loader");
 
         for (let i = 0; i < games.length; i++) {
 
@@ -52,6 +53,8 @@ async function getGames() {
 
         console.log(games);
 
+        const loading = document.querySelector(".loader");
+        
         for (let i = 0; i < games.length; i++) {
 
             if ( i === 10) {
@@ -71,7 +74,7 @@ async function getGames() {
             <p>${games[i].ratings[0].title}</p>
             </div>
             </div>
-            <button class="sbutton">Add to cart</button>
+            <button formaction="checkout.html" type="submit" class="sbutton">Buy this</button>
             </div>`
         }
     
