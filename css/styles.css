@@ -25,14 +25,15 @@ body {
 
 }
 
-#featured-container, #games-content, .details-card, .gamesContainer{
+#featured-container, .games-content, .details-card, .gamesContainer{
     background-color: #090f2e;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
     margin: 10px;
+    padding: 20px;
 }
 
 h1, h2, h3, p {
@@ -84,7 +85,6 @@ nav {
     justify-content: space-between;
     width: 30px;
     height: 25px;
-
 }
 
 .toggle-button .bar {
@@ -107,13 +107,9 @@ nav {
 #featured-container {
     margin: auto;
     width: 100%;
+    padding-top: 20px;
 }
 
-#content h3 {
-    text-align: left;
-    padding: 10px 0;
-    font-family: "Chakra Petch", sans-serif ;
-}
 
 .games {
     position: relative;
@@ -141,15 +137,18 @@ nav {
 }
 
 .games-container {
+    box-sizing: border-box;
     display: flex;
     margin: auto;
-    width: 90%;
+    width: 80%;
     justify-content: space-between;
     overflow: hidden;
 }
 
 .results {
+    order: 1;
     text-align: center;
+    margin: 10px;
 }
 
 .results img{
@@ -193,10 +192,16 @@ nav {
 
 /*Account*/
 
+.accountDetails {
+    background-color: #090f2e;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
 .lastPurchase img, .selling img, .wishList img{
     width: 300px;
     height: 200px;
-    margin-right: 20px;
 }
 .lastPurchase, .selling, .wishList {
     display: flex;
@@ -243,14 +248,26 @@ nav {
     color: #ff7f50;
 }
 
+/*Contact & Register Forms*/
 
-
-/*Contact*/
+.contact-container, .registerForm, .account-container{
+    display: flex;
+}
 form {
     padding: 1rem;
     background-color: #090f2e;
     border-radius: 5%;
 }
+
+.registerForm {
+    padding: 1rem;
+}
+
+form, #registerForm {
+    width: 600px;
+    margin: auto;
+}
+
 label {
     display: block;
     margin-top: 1rem;
@@ -306,12 +323,6 @@ button {
 
 .successContainer p {
     margin-bottom: 10px;
-}
-/*Register*/
-
-form, #registerForm {
-    width: 600px;
-    margin: auto;
 }
 
 /*Footer*/
@@ -382,8 +393,11 @@ footer {
 }
 @media only screen and (max-width: 1000px) {
 
+    /*Navigation*/
     .toggle-button {
         display: flex;
+        top: 50px;
+        right: 60px;
     }
 
     .navlinks {
@@ -408,9 +422,57 @@ footer {
         display: flex;
     }
 
-    #games-content img{
-        width: 200px;
-        height: 120px;
+    /*Games*/
+    .games-content img{
+        width: 250px;
+        height: 160px;
         margin-right: 10px;
     }  
+
+    .sgame {
+        flex-direction: column;
+        height: auto;
+    }
+    .game-card {
+        height: auto;
+    }
+    .sbutton {
+        margin-top: 10px;
+    }
+
+    .accountDetails h2 {
+        text-align: center;
+    }
+    .lastPurchase, .selling, .wishList {
+        flex-direction: column;
+    }
+
+    .gamesContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gamesContainer img {
+        width: 250px;
+        height: 160px;
+    }
+
+    .details-card {
+        flex-direction: column;
+    }
+
+    .gameDescription {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .games-container {
+        flex-direction: column;
+    }
+
+    .games p {
+        top: 200px;
+        left: 0;
+    }
 }

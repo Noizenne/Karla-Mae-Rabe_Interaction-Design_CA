@@ -9,6 +9,7 @@ const address = document.querySelector("#address");
 const addressError = document.querySelector("#addressError");
 
 const loading = document.querySelector(".loader");
+loading.classList.remove("loader");
 
 function validateForm(event) {
     event.preventDefault();

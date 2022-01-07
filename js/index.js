@@ -15,7 +15,6 @@ async function gamesList() {
         console.log(games);
 
         const loading = document.querySelector(".loader");
-        loading.classList.remove("loader");
 
         for (let i = 0; i < games.length; i++) {
 
