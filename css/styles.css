@@ -93,6 +93,10 @@ nav {
     background-color: #f2f2f2;
     border: 10px;
 }
+
+.actives {
+    color: #ff7f50;
+}
 /*Main*/
 #content {
     position: relative;
@@ -210,21 +214,15 @@ nav {
 }
 
 /*Games*/
+
 .sgame {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 200px;
     background-color: #090f2e;
     padding: 10px 30px;
-    margin: 10px;
-}
-
-.game-card {
-    height: 160px;
-    margin: auto;
-    overflow: hidden;
-    white-space: nowrap;
+    width: 100%;
 }
 
 .games-column img {
@@ -233,39 +231,36 @@ nav {
     border-radius: 5%;
 }
 
-.card-details {
+.card-details h4{
+    color: #f2f2f2;
+    margin: 10px;
     text-align: center;
 }
-.game-card h4 {
-    font-size: 15px;
-    color: #f2f2f2;
-    margin: 0;
-    padding: 5px;
+
+.card-details p {
+    color: #ff7f50;
+    text-align: center;
 }
 
-.game-card p {
-    font-size: 13px;
-    color: #ff7f50;
-}
+
 
 /*Contact & Register Forms*/
 
 .contact-container, .registerForm, .account-container{
     display: flex;
 }
+
 form {
     padding: 1rem;
     background-color: #090f2e;
     border-radius: 5%;
 }
 
-.registerForm {
+.registerForm, .contact-container{
     padding: 1rem;
-}
-
-form, #registerForm {
-    width: 600px;
+    width: 100%;
     margin: auto;
+    justify-content: center;
 }
 
 label {
@@ -303,9 +298,12 @@ button {
     font-size: 40px;
 }
 
-.checkoutContainer {
+.checkoutForm {
     display: flex;
     margin: auto;
+    width: 600px;
+    flex-direction: column;
+
 }
 
 .checkoutForm .row{
@@ -324,10 +322,16 @@ button {
 .successContainer {
     margin-top: 20px;
     text-align: center;
+    background-color: #090f2e;
 }
 
 .successContainer p {
     margin-bottom: 10px;
+}
+
+.successbutton {
+    width: 100%;
+    align-items: center;
 }
 
 /*Footer*/
@@ -438,15 +442,10 @@ footer {
         margin-right: 10px;
     }  
 
-    .sgame {
-        flex-direction: column;
-        height: auto;
-    }
-    .game-card {
-        height: auto;
-    }
     .sbutton {
-        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .accountDetails h2 {

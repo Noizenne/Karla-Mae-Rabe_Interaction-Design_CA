@@ -4,7 +4,6 @@ const url = "https://api.rawg.io/api/games?key=930f3820ae934782bc02fc7a5949d8a8"
 const gamesContainer = document.querySelector(".games-container");
 
 const loading = document.querySelector(".loader");
-loading.classList.remove("loader");
 
 async function gamesList() {
 
@@ -74,7 +73,9 @@ async function getGames() {
             <p>${games[i].ratings[0].title}</p>
             </div>
             </div>
-            <button formaction="checkout.html" type="submit" class="sbutton">Buy this</button>
+            <form class="ssbutton">
+            <button formaction="checkout.html" type="submit">Buy this</button>
+            </form>
             </div>`
         }
     

@@ -43,7 +43,9 @@ function createHTML(data) {
     </div>
     <p>Rating: ${data.rating}</p>
     <p>Tags: ${data.tags[0].name}, ${data.tags[1].name}</p>
+    <form class="sbutton">
     <button formaction="checkout.html" type="submit">Buy this</button>
+    </form>
     </div>
     </div>
     </div>
@@ -52,3 +54,11 @@ function createHTML(data) {
   </div>
     `
 }
+
+
+const toggleBtn = document.querySelector(".toggle-button");
+
+const navLinks = document.querySelector(".navlinks");
+toggleBtn.addEventListener("click", () => {
+   navLinks.classList.toggle("active")
+})
