@@ -303,6 +303,11 @@ button {
     font-size: 40px;
 }
 
+.checkoutContainer {
+    display: flex;
+    margin: auto;
+}
+
 .checkoutForm .row{
     display: flex;
 }
@@ -393,6 +398,10 @@ footer {
 }
 @media only screen and (max-width: 1000px) {
 
+
+    .gamesContainer, .contact-container{
+        max-width: 100%;
+    }
     /*Navigation*/
     .toggle-button {
         display: flex;
@@ -450,6 +459,7 @@ footer {
     .gamesContainer {
         display: flex;
         flex-direction: column;
+        max-width: 100%;
     }
 
     .gamesContainer img {
@@ -461,12 +471,24 @@ footer {
         flex-direction: column;
     }
 
+    .details-card > div > div {
+        margin-top: 20px;
+    }
+
     .gameDescription {
         margin-top: 100px;
+    }
+
+    .registerForm {
+        padding: 0;
     }
 }
 
 @media only screen and (max-width: 700px) {
+
+    #content {
+        max-width: 100%;
+    }
     .games-container {
         flex-direction: column;
     }
@@ -475,4 +497,39 @@ footer {
         top: 200px;
         left: 0;
     }
+
+    .gameTitle {
+        text-align: center;
+    }
+
+    .details-card {
+        align-items: center;
+    }
+
+    .details-card > div > div {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .gameDescription {
+        margin-top: 130px;
+    }
+
+    .gameDescription h3{
+        text-align: center;
+    }
+
+    .sgame {
+        margin: 10px 0;
+    }
+
+    .accountDetails {
+        margin: 10px 0;
+    }
+
+    .checkoutForm {
+        margin: 0;
+        width: 100%;
+    }
+
 }
