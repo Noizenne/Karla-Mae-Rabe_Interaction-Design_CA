@@ -349,7 +349,8 @@ footer {
 }
 
 .footer-content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #f2f2f2;
@@ -360,7 +361,8 @@ footer {
 .socials {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 20%;
     
 }
 
@@ -442,6 +444,11 @@ footer {
         margin-right: 10px;
     }  
 
+    .sgame {
+        flex-direction: column;
+        height: auto;
+    }
+
     .sbutton {
         display: flex;
         justify-content: center;
@@ -451,6 +458,7 @@ footer {
     .accountDetails h2 {
         text-align: center;
     }
+    
     .lastPurchase, .selling, .wishList {
         flex-direction: column;
     }
@@ -481,6 +489,7 @@ footer {
     .registerForm {
         padding: 0;
     }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -529,6 +538,10 @@ footer {
     .checkoutForm {
         margin: 0;
         width: 100%;
+    }
+
+    .socials {
+        width: 60%;
     }
 
 }
