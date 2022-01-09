@@ -44,7 +44,7 @@ function createHTML(data) {
     <p>Rating: ${data.rating}</p>
     <p>Tags: ${data.tags[0].name}, ${data.tags[1].name}</p>
     <form class="sbutton">
-    <button formaction="checkout.html" type="submit">Buy this</button>
+    <button formaction="cart.html" type="submit">Add to cart</button>
     </form>
     </div>
     </div>

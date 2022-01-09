@@ -72,7 +72,7 @@ async function getGames() {
             </div>
             </div>
             <form class="ssbutton">
-            <button formaction="checkout.html" type="submit">Buy this</button>
+            <button formaction="cart.html" type="submit">Add to cart</button>
             </form>
             </div>`
         }
