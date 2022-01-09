@@ -10,7 +10,7 @@
 
 a:visited {
     text-decoration: none;
-    color: #a200ff;
+    color: #B271F8;
 }
 
 body {
@@ -76,7 +76,7 @@ nav {
     transition: .2s ease;
 }
 .navlinks li a:hover {
-    color: #ff7f50;
+    color: #FF9844;
     background-color: #090f2e;
     border-radius: 5px;
     font-size: 24px;
@@ -100,9 +100,6 @@ nav {
     border: 10px;
 }
 
-.actives {
-    color: #ff7f50;
-}
 /*Main*/
 #content {
     position: relative;
@@ -124,7 +121,7 @@ nav {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 900;
     letter-spacing: 3px;
-    text-decoration: #ff7f50 1px underline solid;
+    text-decoration: #FF9844 1px underline solid;
     text-shadow: 2px 2px #3a3a3a;
 }
 
@@ -139,7 +136,7 @@ nav {
 .games p {
     position: absolute;
     font-size: 40px;
-    color: #ff7f50;
+    color: #FF9844;
     text-align: justify;
     top: 240px;
     left: 100px;
@@ -252,7 +249,7 @@ nav {
 }
 
 .card-details p {
-    color: #ff7f50;
+    color: #FF9844;
     text-align: center;
 }
 
@@ -295,7 +292,7 @@ input {
     height: 150px;
 }
 button {
-    background-color: #ff7f50;
+    background-color: #FF9844;
     border: none;
     border-radius: 1rem;
     width: 200px;
@@ -382,7 +379,7 @@ footer {
 
 .footer-content li a {
     font-size: 40px;
-    color: #ff7f50;
+    color: #FF9844;
 }
 
 .footer-content p {
@@ -391,7 +388,7 @@ footer {
 
 .loader {
     border: 10px solid #3a3a3a;
-    border-top: 10px solid #ff7f50;
+    border-top: 10px solid #FF9844;
     border-radius: 100%;
     width: 60px;
     height: 60px;
