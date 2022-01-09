@@ -40,12 +40,14 @@ h1, h2, h3, p {
     color: #f2f2f2;
 }
 
+/*Breadcrumbs*/
 .bc {
     position: absolute;
     color: #f2f2f2;
     margin-left: 30px;
     margin-top: 30px;
 }
+
 /*Header*/
 
 /*Navigation*/
@@ -127,6 +129,8 @@ nav {
                 0 32px 64px rgba(0,0,0,0.06);
 }
 
+/*Featured section*/
+
 #featured-container {
     margin: auto;
     width: 100%;
@@ -142,6 +146,7 @@ nav {
     text-shadow: 2px 2px #3a3a3a;
 }
 
+/*Popular section*/
 
 .games {
     position: relative;
@@ -194,6 +199,8 @@ nav {
     font-size: 18px;
 }
 
+/*Game page*/
+
 .gamesContainer {
     position: relative;
     padding: 60px 120px 0 120px;
@@ -222,26 +229,7 @@ nav {
     display: block;
 }
 
-/*Account*/
-
-.accountDetails {
-    background-color: #090f2e;
-    margin: 20px;
-    padding: 30px;
-    border-radius: 5px;
-}
-
-.lastPurchase img, .selling img, .wishList img{
-    width: 300px;
-    height: 200px;
-}
-.lastPurchase, .selling, .wishList {
-    display: flex;
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-/*Games*/
+/*Game page*/
 
 .sgame {
     display: flex;
@@ -272,6 +260,24 @@ nav {
     text-align: center;
 }
 
+/*Account*/
+
+.accountDetails {
+    background-color: #090f2e;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.lastPurchase img, .selling img, .wishList img{
+    width: 300px;
+    height: 200px;
+}
+.lastPurchase, .selling, .wishList {
+    display: flex;
+    margin-top: 20px;
+    overflow: hidden;
+}
 
 
 /*Contact & Register Forms*/
@@ -319,7 +325,6 @@ button {
     color: #f2f2f2;
     margin-top: 10px;
     cursor: pointer;
-
 }
 
 .shoppingbag {
@@ -358,7 +363,7 @@ button {
     text-decoration: #f2f2f2 underline 1px;
 }
 
-/*Checkout*/
+/*Checkout page*/
 
 .cardIcons {
     font-size: 40px;
@@ -383,7 +388,7 @@ button {
     margin-top: 2px;
 }
 
-/*Checkout Success*/
+/*Checkout Success page*/
 
 .successContainer {
     margin-top: 20px;
@@ -441,6 +446,8 @@ footer {
     text-align: center;
 }
 
+/*Loader*/
+
 .loader {
     border: 10px solid #3a3a3a;
     border-top: 10px solid #FF9844;
@@ -461,15 +468,13 @@ footer {
         transform: rotate(360deg);
     }
 }
+/*Media Queries*/
 
-@media only screen and (min-width: 1000px) {
-  #content {
-      min-height: 40vh;
-  }  
-
-}
 @media only screen and (max-width: 1000px) {
 
+    #content {
+        min-height: 40vh;
+    }  
 
     .gamesContainer, .contact-container{
         max-width: 100%;
@@ -503,7 +508,11 @@ footer {
         display: flex;
     }
 
-    /*Games*/
+    .search {
+        width: auto;
+    }
+
+    /*Game page*/
     .games-content img{
         width: 250px;
         height: 160px;
@@ -520,14 +529,6 @@ footer {
         display: flex;
         justify-content: center;
         width: 100%;
-    }
-
-    .accountDetails h2 {
-        text-align: center;
-    }
-    
-    .lastPurchase, .selling, .wishList {
-        flex-direction: column;
     }
 
     .gamesContainer {
@@ -553,10 +554,32 @@ footer {
         margin-top: 100px;
     }
 
+    /*Account page*/
+
+    .accountDetails h2 {
+        text-align: center;
+    }
+    
+    .lastPurchase, .selling, .wishList {
+        flex-direction: column;
+    }
+
+    /*Register page*/
     .registerForm {
         padding: 0;
     }
+}
 
+@media only screen and (max-width: 900px) {
+
+    /*Cart page*/
+    .shoppingbag {
+        flex-direction: column;
+    }
+
+    .summary {
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -564,6 +587,12 @@ footer {
     #content {
         max-width: 100%;
     }
+
+    .bc {
+        margin-top: auto;
+    }
+
+    /*Game page*/
     .games-container {
         flex-direction: column;
     }
@@ -598,17 +627,20 @@ footer {
         margin: 10px 0;
     }
 
+    /*Account page*/
+
     .accountDetails {
         margin: 10px 0;
     }
 
+    /*Checkout*/
     .checkoutForm {
         margin: 0;
         width: 100%;
     }
 
+    /*Socials*/
     .socials {
         width: 60%;
     }
-
 }

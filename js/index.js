@@ -3,6 +3,7 @@ const url = "https://api.rawg.io/api/games?key=930f3820ae934782bc02fc7a5949d8a8"
 const gamesContainer = document.querySelector(".games-container");
 
 const loading = document.querySelector(".loader");
+loading.classList.remove("loader");
 
 async function gamesList() {
 
