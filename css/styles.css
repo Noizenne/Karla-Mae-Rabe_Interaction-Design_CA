@@ -462,6 +462,7 @@ footer {
     .sgame {
         flex-direction: column;
         height: auto;
+        width: auto;
     }
 
     .sbutton {
