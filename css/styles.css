@@ -115,6 +115,8 @@ nav {
     margin: auto;
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 .pon {
@@ -233,7 +235,9 @@ nav {
     height: 200px;
     background-color: #090f2e;
     padding: 10px 30px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .games-column img {
