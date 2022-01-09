@@ -64,6 +64,7 @@ nav {
 
 .navlinks ul {
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -100,6 +101,21 @@ nav {
     border: 10px;
 }
 
+.search {
+    display: flex;
+    width: 30%;
+   
+    background-color: #1b203d;
+    border-radius: 0;
+}
+.search-btn {
+    background-color: #1b203d;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    width: 25%;
+    font-size: 20px;
+}
 /*Main*/
 #content {
     position: relative;
