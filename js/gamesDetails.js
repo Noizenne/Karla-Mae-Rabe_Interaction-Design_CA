@@ -8,7 +8,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = "https://api.rawg.io/api/games/" + id + "?key=930f3820ae934782bc02fc7a5949d8a8";
+const url = "https://www.kmrabe.site/wp-json/wc/v3/products/" + id + "?consumer_key=ck_737a0bb25e088788e7d90504a028dda34e49fd7c&consumer_secret=cs_1a2793ec973e9b9993a47e39c001e78a457c6efb";
 
 const loading = document.querySelector(".loader");
 loading.classList.remove("loader");
@@ -19,8 +19,9 @@ async function getGame() {
 
         const data = await response.json();
 
-        createHTML(data);
         console.log(data);
+
+        createHTML(data);
 
     }
     catch {
@@ -31,27 +32,25 @@ async function getGame() {
 getGame();
 
 function createHTML(data) {
+
     gamesContainer.innerHTML = `
     <h2 class="gameTitle">${data.name}</h2>
     <div class="details-card">
-    <img src="${data.background_image}"</img>
+    <img src="${data.images[0].src}"</img>
     <div class="gamesDetails">
     <div><h3>Details</h3>
-    <p>Released: ${data.released}</p>
-    <div>
-    <p>Genre: ${data.genres[1].name}, ${data.genres[0].name}</p>
+    <p>Genre: ${data.attributes[0].options}</p>
     </div>
-    <p>Rating: ${data.rating}</p>
-    <p>Tags: ${data.tags[0].name}, ${data.tags[1].name}</p>
+    <p>Rating: ${data.average_rating}</p>
     <form class="sbutton">
     <button formaction="cart.html" type="submit">Add to cart</button>
     </form>
     </div>
     </div>
     </div>
-    <div class="gameDescription"><h3>Description</h3> <p>${data.description}</p></div>
+    <div class="gameDescription"><h3>Description</h3> <p>${data.short_description}</p></div>
     <div class="games-container">
-  </div>
+    </div>
     `
 }
 
